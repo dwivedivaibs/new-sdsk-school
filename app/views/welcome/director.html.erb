@@ -1,0 +1,46 @@
+<section class="inner-intro bg-img light-color overlay-before parallax-background">
+  <div class="container">
+    <div class="row title">
+      <!--<h1 data-title="About"><span>Chairman's Message</span></h1>-->
+    </div>
+  </div>
+</section>
+<div id="about-section" class="padding pt-xs-60">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12">
+        <div class="heading-box pb-30">
+          <h2><span>Principal's</span> Message</h2>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-9 col-md-9 col-sm-9 col-xs-12">
+        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12" style="margin-right:15px; padding-left:0px">
+          <div class=" wish-send haslayout">
+            <figure>
+              <%= image_tag('principal.jpg', style: "border:2px solid #26b1a4") %></figure>
+          </div>
+        </div>
+        <% if @director_message.present? %>
+          <p class="inner-p"><%= raw @director_message.description %></p>
+        <% else %>
+         <p class="inner-p">
+          "Dear students and parents / Guardians of SDSK International Public SCHOOL.It is with great pleasure that I welcome you to our school website. I am honored and feel very privileged to be the Principal of SDSK International Public School, .On behalf of the entire team at AWS, I welcome you all to the SDSK family. It is extremely exciting to begin the academic year 2019-20."
+          </p>
+        <% end %>
+        <p class="inr-hd"><b style="font-size:20px">MR. SHIVAM SINGH<br> DIRECTOR</b></p>
+      </div>
+      <div class="col-sm-3">
+        <%= render 'layouts/side_bar' %>
+      </div>
+    </div>
+  </div>
+</div>
+<style type="text/css">
+  .mission-img{
+    background: url("<%= asset_path('bg_1.jpg') %>") 0 20% no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+  }
+</style>
